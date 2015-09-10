@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-promise-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdisonSu768/angularjs-promise-playground.git"
+  },
+  "author": "edison.su",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdisonSu768/angularjs-promise-playground/issues"
+  },
+  "homepage": "https://github.com/EdisonSu768/angularjs-promise-playground#readme"
+}

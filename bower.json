@@ -1,0 +1,17 @@
+{
+  "name": "angularjs-promise-playground",
+  "version": "0.0.0",
+  "homepage": "https://github.com/EdisonSu768/angularjs-promise-playground",
+  "authors": [
+    "Edison Su <edison.su@trantect.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
