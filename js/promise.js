@@ -21,15 +21,14 @@
         }, function(err) {
           console.log('err', err);
           return deferred.reject(err);
-        }).then(function(val) {
-          console.log('2', val);
-          return deferred.resolve('C');
+        });
+        promise.then(function(val) {
+          return console.log('2', val);
         }, function(err) {
-          console.log('4', err);
-          return deferred.reject(err);
+          return console.log('4', err);
         });
         console.log('4444444444444');
-        return httpDeferred.resolve('666');
+        return httpDeferred.reject('HHH');
       };
     }
   ]);

@@ -10,26 +10,26 @@ promiseModule.controller 'promiseController',['$scope', '$q', '$http', ($scope, 
     promise = deferred.promise
     httpPromise = httpDeferred.promise
     console.log '333333333333333',promise
-    httpPromise
-    .then((val) ->
-        console.log '1',val
-        deferred.resolve 'B'
-      , (err)->
-        console.log 'err',err
-        deferred.reject(err)
-    )
-    .then((val) ->
-        console.log '2',val
-        deferred.resolve 'C'
-      , (err)->
-        console.log '4',err
-        deferred.reject err)
-#    .then (val) ->
+
+    httpPromise.then (val) ->
+      console.log '1',val
+      deferred.resolve 'B'
+    , (err)->
+      console.log 'err',err
+      deferred.reject(err)
+
+    promise.then (val) ->
+      console.log '2',val
+    , (err)->
+      console.log '4',err
+
+
+#    promise.then (val) ->
 #      console.log '3',val
 
     console.log '4444444444444'
 #    deferred.resolve('A')
 #    deferred.reject('A')
-#    httpDeferred.reject('HHH')
-    httpDeferred.resolve('666')
+    httpDeferred.reject('HHH')
+#    httpDeferred.resolve('666')
 ]
